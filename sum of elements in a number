@@ -1,0 +1,7 @@
+n = input("Enter a number: ")
+total_sum = 0
+
+for digit in n:
+    total_sum += int(digit)
+
+print("The sum of digits is:", total_sum)
