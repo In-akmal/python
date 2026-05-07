@@ -1,0 +1,7 @@
+n = input("enter a number")
+
+
+reversed=n[::-1]
+
+result = int(reversed)    
+print(result)
