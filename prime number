@@ -1,0 +1,13 @@
+num=int (input("Enter a number :"))
+if num <= 1:
+    print("it is not a prime it shouldbe greater than 1")
+else:
+    is_prime = True
+    
+    for i in range(2, num):
+        if num % i ==0:
+            is_prime = False
+if is_prime:
+    print(f"iit is a prime number : {num}")
+else:
+    print(f"it is not a prime number : {num}")
