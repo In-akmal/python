@@ -1,0 +1,9 @@
+text = input("Enter a string: ")
+# clean_text=text.strip()
+# print("streped text",clean_text)
+
+clean_texts=text.replace(" ","")
+print("without spaces",clean_texts)
+
+cleann_text ="".join(text.split())
+print("removes spaces",cleann_text)
