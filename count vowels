@@ -1,0 +1,6 @@
+word= input("Enter a word :")
+count = 0
+for letter in word.lower():
+    if letter in ('a', 'e', 'i', 'o', 'u'):
+        count+=1
+print(word,"has",count,"vowels")
