@@ -1,0 +1,27 @@
+balance = 1000.0
+
+while True:
+    print("\n--- ATM MENU ---")
+    print("1. Check Balance")
+    print("2. Deposit Money")
+    print("3. Withdraw Money")
+    print("4. Exit")
+    choice=input("select an option (1-4) : ")
+    if choice == "1":
+        print(f"current balance: ${balance:.2f}")
+    elif choice == "2":
+        amount=float(input("enter deposite amount: "))
+        balance+=amount
+        print(f"${amount:.2f} deposites successfully.")
+    elif choice=="3":
+        amount==float(input("enter amount for withdrawal"))
+        if amount <=balance:
+            balance-=amount
+            print(f"${amount:.2f} withdrawn successfully.")
+        else:
+            print("insuffients funds")
+    elif choice == "4":
+        print("thank you for using atm. goodbye")
+        break
+    else:
+        print("invalid choice please select 1-4.")
