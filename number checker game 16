@@ -1,0 +1,12 @@
+import random 
+series=random.randint(1,20)
+print("guess the number between 1 to 20")
+while True:
+    guess=int(input("enter the number :"))
+    if guess>series:
+        print("too high ! guess below")
+    elif guess<series:
+        print("too low! guess high")
+    else:
+        print("congratulations you success fully gussed")
+        break
