@@ -1,0 +1,10 @@
+nums = [1, 2, 2, 3, 3, 3, 4]
+frequency = {}
+
+for n in nums:
+    if n in frequency:
+        frequency[n] += 1
+    else:
+        frequency[n] = 1
+
+print("Frequencies:", frequency)  # Output: {1: 1, 2: 2, 3: 3, 4: 1}
